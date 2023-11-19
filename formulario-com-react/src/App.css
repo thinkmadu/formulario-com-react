@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  background-image: url('https://img.freepik.com/fotos-gratis/ilustracao-3d-de-fundo-azul-e-roxo-futurista-techno-sci-fi-luzes-cool_181624-57587.jpg?w=1380&t=st=1695000657~exp=1695001257~hmac=0508a91cb324f9e7fff5a0356952da985d4899b595094f14568b7c83cd24c374'); 
+  background-size: cover; 
+  background-repeat: no-repeat;
+  color: #ffff;
+background-attachment: fixed;
+font-weight: 400;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+select,
+textarea{
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#title {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#description {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+#survey-form {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label {
+    display: block;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+option{
+    color: black;
+}
+
+.enviar {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+
+textarea {
+    height: 100px;
+}
+
+.inline {
+    display: inline-block;
+    margin-right: 10px;
 }
