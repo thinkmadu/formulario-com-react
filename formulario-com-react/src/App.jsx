@@ -4,17 +4,17 @@ import './App.css';
 
 function Home() {
   return (
-    <div id='home'>
+    <div id='home' className="centered-link-container">
       <h1>Página Inicial</h1>
       <p>Bem-vindo à pesquisa de plataforma de jogos digitais.</p>
-      <Link to="/form">Ir para o formulário</Link>
+      <Link to="/form" className="centered-link">Ir para o formulário</Link>
     </div>
   );
 }
 
 function Form() {
   return (
-    <div id='form'>
+    <div id='form' className="centered-link-container">
       <h1>Formulário</h1>
     <html lang="pt">
       <head>
@@ -24,7 +24,7 @@ function Form() {
       <body>
         <h1 id="title">Pesquisa Plataforma de Jogos Digitais</h1>
         <p id="description">Obrigado pelo seu tempo! Essa pesquisa nos ajudará a conhecer melhor os nossos clientes.</p>
-        <div>
+        <div className="checkbox-container">
           <form id="survey-form">
             <fieldset>
               <label id="name-label">
@@ -49,30 +49,30 @@ function Form() {
                 </select>
               </label>
               <div>
-                <label>Você recomendaria nossa plataforma para um amigo?</label>
+                <label id='recommend'>Você recomendaria nossa plataforma para um amigo?</label>
                 <input type="radio" name="recomendation" value="recommend" className="inline" />Recomendaria
-                <label>
+                <label className="radio">
                   <input type="radio" name="recomendation" value="not-recommend" className="inline" />Não recomendaria
                 </label>
-                <label>
+                <label className="radio">
                   <input type="radio" name="recomendation" value="not-know" className="inline" />Não tenho certeza
                 </label>
               </div>
-              <label>Quais seus gêneros de jogos favoritos?</label>
-              <label>
+              <label id='genre'>Quais seus gêneros de jogos favoritos?</label>
+              <label className="checkbox">
                 <input type="checkbox" value="sectors" className="inline" />FPS
               </label>
-              <label>
+              <label className="checkbox">
                 <input type="checkbox" value="sectors" className="inline" />RPG
               </label>
-              <label>
+              <label className="checkbox">
                 <input type="checkbox" value="sectors" className="inline" />Simulação
               </label>
-              <label>
+              <label className="checkbox">
                 <input type="checkbox" value="sectors" className="inline" />Puzzle
               </label>
               <div>
-                <label>Algum comentário ou sugestão?</label> <textarea id="comentarios" placeholder="Insira seu comentário aqui..." name="comentario"></textarea>
+                <label id='comment'>Algum comentário ou sugestão?</label> <textarea id="comentarios" placeholder="Insira seu comentário aqui..." name="comentario"></textarea>
               </div>
               <div>
                 <button type="submit" id="submit" className="enviar">
@@ -84,27 +84,27 @@ function Form() {
         </div>
       </body>
     </html>
-      <Link to="/about">Ir para a página Sobre</Link>
+      <Link to="/about" className="centered-link">Ir para a página Sobre</Link>
     </div>
   );
 }
 
 function About() {
   return (
-    <div id='about'>
+    <div id='about' className="centered-link-container">
       <h1>Sobre</h1>
       <p>Esta é a página de informações sobre a pesquisa de plataforma de jogos digitais.</p>
-      <Link to="/">Voltar para a página inicial</Link>
+      <Link to="/" className="centered-link">Voltar para a página inicial</Link>
     </div>
   );
 }
 
 function NotFound() {
   return (
-    <div id='notFound'>
+    <div id='notFound' className="centered-link-container">
       <h1>Rota Inválida</h1>
       <p>A página que você está procurando não existe.</p>
-      <Link to="/">Voltar para a página inicial</Link>
+      <Link to="/" className="centered-link">Voltar para a página inicial</Link>
     </div>
   );
 }
