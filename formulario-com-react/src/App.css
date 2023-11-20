@@ -86,3 +86,39 @@ textarea {
     display: inline-block;
     margin-right: 10px;
 }
+
+#form h1{
+    text-align: center;
+}
+
+#about h1{
+  text-align: center;
+}
+
+#about p{
+  text-align: center;
+}
+
+#home h1{
+  text-align: center;
+}
+
+#home p{
+  text-align: center;
+}
+
+#route h1{
+  text-align: center;
+}
+
+#route route{
+  text-align: center;
+}
+
+#notFound h1{
+  text-align: center;
+}
+
+#notFound p{
+  text-align: center;
+}

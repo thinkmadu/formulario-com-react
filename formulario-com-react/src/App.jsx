@@ -4,7 +4,7 @@ import './App.css';
 
 function Home() {
   return (
-    <div>
+    <div id='home'>
       <h1>Página Inicial</h1>
       <p>Bem-vindo à pesquisa de plataforma de jogos digitais.</p>
       <Link to="/form">Ir para o formulário</Link>
@@ -14,7 +14,7 @@ function Home() {
 
 function Form() {
   return (
-    <div>
+    <div id='form'>
       <h1>Formulário</h1>
     <html lang="pt">
       <head>
@@ -91,7 +91,7 @@ function Form() {
 
 function About() {
   return (
-    <div>
+    <div id='about'>
       <h1>Sobre</h1>
       <p>Esta é a página de informações sobre a pesquisa de plataforma de jogos digitais.</p>
       <Link to="/">Voltar para a página inicial</Link>
@@ -101,7 +101,7 @@ function About() {
 
 function NotFound() {
   return (
-    <div>
+    <div id='notFound'>
       <h1>Rota Inválida</h1>
       <p>A página que você está procurando não existe.</p>
       <Link to="/">Voltar para a página inicial</Link>
@@ -111,7 +111,7 @@ function NotFound() {
 
 function App() {
   return (
-    <Router>
+    <Router id='rotas'>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/form" element={<Form />} />
