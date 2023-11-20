@@ -47,7 +47,7 @@ input[type="email"],
 input[type="number"],
 select,
 textarea {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #ffffff;
@@ -75,8 +75,28 @@ option{
 input[type="radio"],
 input[type="checkbox"] {
     margin-right: 5px;
+    margin-left: 5px;
 }
 
+
+.checkbox-container {
+  align-content: center;
+  margin-top: 10px; 
+}
+
+#survey-form{
+  padding: 20px;
+  border-radius: 10px;
+  width: 60%;
+  margin: auto;
+  text-align: center; /* Adicionado para centralizar os elementos */
+}
+
+.checkbox, .radio {
+  display: inline-block;
+  margin-left: 50px;
+  text-align: center; /* Adicionado para centralizar os elementos */
+}
 
 textarea {
     height: 100px;
@@ -87,38 +107,31 @@ textarea {
     margin-right: 10px;
 }
 
-#form h1{
+#form h1, #about h1, #home h1, #route h1, #notFound h1{
     text-align: center;
 }
 
-#about h1{
-  text-align: center;
-}
-
-#about p{
-  text-align: center;
-}
-
-#home h1{
-  text-align: center;
-}
-
-#home p{
-  text-align: center;
-}
-
-#route h1{
-  text-align: center;
+#about p, #home p, #notFound p{
+    text-align: center;
 }
 
 #route route{
   text-align: center;
 }
 
-#notFound h1{
+.centered-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #3e3769;
+  color: #fff;
+  border-radius: 5px;
   text-align: center;
 }
 
-#notFound p{
+#recommend, #comment, #genre{
+  font-size: 20px;
+  margin-top: 20px;
   text-align: center;
 }
